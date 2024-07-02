@@ -27,7 +27,7 @@ const consultarClima = () => {
 }
 </script>
 <template>
-    <form class="formulario" @submit.prevent="consultarClima">
+    <form autocomplete="off" class="formulario" @submit.prevent="consultarClima">
         <Alerta v-if="error">{{ error }}</Alerta>
         <div class="campo">
             <label for="ciudad">Ciudad</label>
